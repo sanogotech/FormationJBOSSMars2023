@@ -64,7 +64,6 @@ Updated user 'admin' to file 'D:\JBOSS\wildfly-21.0.2.Final\domain\configuration
 Appuyez sur une touche pour continuer...
 ```
 
-
 http://localhost:9990/console/index.html
 user = admin
 password =  admin123

@@ -10,7 +10,8 @@ Formation JBOSS  Mars 2023
 - Pause : 10h45
 - Pause : 15h
 
-## Jour 1
+## INTRO
+
 -   JAVA vs JEE
 -   JAVA  EE :  https://docs.oracle.com/javaee/7/tutorial/overview007.htm
 -   JBOSS/Wildfly  :  https://www.wildfly.org/downloads/
@@ -18,3 +19,23 @@ Formation JBOSS  Mars 2023
 The technology behind WildFly is also available in JBoss Enterprise Application Platform 7. JBoss EAP is a hardened enterprise subscription with Red Hat’s world-class support, long multi-year maintenance cycles, and exclusive content.
 
 ```
+
+### Architecture NTIER
+
+### Architecture JAVA JEE
+
+### Serveur  d'Application vs Serveur Web
+
+### JBOSS Overview
+
+### Presentation de l'Arborescence  Folders/Files Wildfly
+
+### Concept clés JBOSS
+
+##  Administration JBOSS
+
+### Ou trouver les informations et parametrage
+
+### Appliquer et Tester
+
+### Tunning 

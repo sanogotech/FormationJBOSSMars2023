@@ -7,6 +7,8 @@ Formation JBOSS  Mars 2023
 
 - http://www.mastertheboss.com/jboss-frameworks/jboss-maven/configuring-maven-wildfly-plugin/
 
+- https://access.redhat.com/documentation/fr-fr/jboss_enterprise_application_platform/6.3/html/installation_guide/installation_structure
+
 
 ##  9h30 - 12h30 /  13h30 - 17h/16h30
 

@@ -14,6 +14,18 @@ Formation JBOSS  Mars 2023
 - Pause : 10h45
 - Pause : 15h
 
+##  Jour 1 TP
+
+- Download  jboss wildfly :  https://www.wildfly.org/downloads/ 
+- 21.0.2.Final  Jakarta EE Full & Web Distribution
+
+```
+$JBOSS_HOME/bin/standalone.bat  ou /bin/standalone.bat
+$JBOSS_HOME/bin/add-user.bat -u admin -p admin123 
+
+```
+
+
 ## INTRO
 
 -   JAVA vs JEE

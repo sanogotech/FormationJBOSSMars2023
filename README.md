@@ -9,7 +9,6 @@ Formation JBOSS  Mars 2023
 
 - https://access.redhat.com/documentation/fr-fr/jboss_enterprise_application_platform/6.3/html/installation_guide/installation_structure
 
-
 ##  9h30 - 12h30 /  13h30 - 17h/16h30
 
 - Pause : 10h45
@@ -31,16 +30,43 @@ The technology behind WildFly is also available in JBoss Enterprise Application 
 
 ### Serveur  d'Application vs Serveur Web
 
-### JBOSS Overview
+## JBOSS Overview
+
+Start JBoss WildFly with the Web Profile
+-------------------------
+
+1. Open a command line and navigate to the root of the JBoss server directory.
+2. The following shows the command line to start the server with the web profile:
+
+```
+        For Linux:   JBOSS_HOME/bin/standalone.sh
+        For Windows: JBOSS_HOME\bin\standalone.bat
+		
+		```
+ **STARTER JBOSS +++++
+
+** standalone.bat 
+
+```
+standalone.bat  --server-config=standalone-full.xml
+```
+- Port admin 9990
+- Port App: 8080
+
+** Create admin user: 
+```
+$JBOSS_HOME/bin/add-user.bat -u admin -p admin123 --silent
+$JBOSS_HOME/bin/add-user.sh -u admin -p admin123 --silent
+
+$JBOSS_HOME/bin/add-user.bat -u admin -p admin123
+Updated user 'admin' to file 'D:\JBOSS\wildfly-21.0.2.Final\standalone\configuration\mgmt-users.properties'
+Updated user 'admin' to file 'D:\JBOSS\wildfly-21.0.2.Final\domain\configuration\mgmt-users.properties'
+Appuyez sur une touche pour continuer...
+```
+
+
+http://localhost:9990/console/index.html
+user = admin
+password =  admin123
 
 ### Presentation de l'Arborescence  Folders/Files Wildfly
-
-### Concept clés JBOSS
-
-##  Administration JBOSS
-
-### Ou trouver les informations et parametrage
-
-### Appliquer et Tester
-
-### Tunning 

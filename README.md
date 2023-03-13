@@ -88,7 +88,9 @@ password =  admin123
 * https://hantsy.github.io/jakartaee8-starter-boilerplate/03run-wildfly-mvn.html
 
 mvn clean  package 
+```
 mvn clean  package  wildfly:deploy
+```
 mvn clean  package   wildfly:undeploy
 
 

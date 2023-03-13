@@ -42,6 +42,27 @@ The technology behind WildFly is also available in JBoss Enterprise Application 
 
 ### Serveur  d'Application vs Serveur Web
 
+## Installation
+
+https://access.redhat.com/documentation/fr-fr/red_hat_jboss_enterprise_application_platform/7.0/html-single/installation_guide/index#choosing_a_jboss_eap_installation_method
+
+#Méthodes d'installation
+
+* Installation ZIP
+
+L'archive ZIP convient aux installations sur n'importe quel système d'exploitation pris en charge. Cette méthode devra être utilisée si vous souhaitez extraire l'instance manuellement.
+
+
+* Installateur JAR
+
+Le programme d'installation JAR peut être exécuté dans une console, ou en tant que qu'assistant graphique. Ces deux options fournissent des instructions étape par étape pour installer et configurer l'instance du serveur. Cette méthode d'installation est la méthode privilégiée pour installer JBoss EAP sur toutes les plateformes prises en charge.
+
+*  Installation RPM
+
+JBoss EAP peut être installé en utilisant des paquets RPM sur des installations prises en charge de Red Hat Enterprise Linux 6 et Red Hat Enterprise Linux 7.
+
+* Docker
+
 ## JBOSS Overview
 
 Start JBoss WildFly with the Web Profile

@@ -19,6 +19,16 @@ standalone.sh
 [source]
 ----
 jboss-cli.sh -c
+
+jboss-cli.bat --connect --controller=127.0.0.1:9990
+help 
+ls
+command  --help
+cd command
+ls
+
+
+```
 ----
 +
 The `-c` switch connects using the default host (`localhost') and management port (`9990'). These values are specified in `bin/jboss-cli.xml' and can be updated.
@@ -507,3 +517,12 @@ image::images/jboss-cli-gui-output.png[title="jboss-cli GUI output"]
 +
 image::images/jboss-cli-gui-filter.png[title="Filter on GUI"]
 
+----
+Configure Logging in WildFly
+WildFly logging can be configured with the web console or the command line interface. You can get more detail on the Logging Configuration page.
+
+Turn on debugging for a specific category with CLI:
+
+/subsystem=logging/logger=org.jboss.as:add(level=DEBUG)
+By default the server.log is configured to include all levels in it’s log output. In the above example we changed the console to also display debug messages.
+----

@@ -1,6 +1,10 @@
 # FormationJBOSSMars2023
 Formation JBOSS  Mars 2023
 
+##  Docs
+
+- https://access.redhat.com/documentation/fr-fr/red_hat_jboss_enterprise_application_platform/7.3/pdf/configuration_guide/red_hat_jboss_enterprise_application_platform-7.3-configuration_guide-en-us.pdf
+
 ##  9h30 - 12h30 /  13h30 - 17h/16h30
 
 - Pause : 10h45

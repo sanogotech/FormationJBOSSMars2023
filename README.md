@@ -20,7 +20,7 @@ Formation JBOSS  Mars 2023
 - 21.0.2.Final  Jakarta EE Full & Web Distribution
 
 ```
-$JBOSS_HOME/bin/standalone.bat  ou /bin/standalone.bat
+$JBOSS_HOME/bin/standalone.bat  ou   /bin/standalone.sh  sur Linux
 $JBOSS_HOME/bin/add-user.bat -u admin -p admin123 
 
 ```

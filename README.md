@@ -73,6 +73,8 @@ password =  admin123
 
 ##  Sample code
 - git clone https://github.com/sanogotech/helloear.git
+
+* https://hantsy.github.io/jakartaee8-starter-boilerplate/03run-wildfly-mvn.html
 ```
 mvn clean  package 
 mvn clean  package  wildfly:deploy

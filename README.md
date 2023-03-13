@@ -62,7 +62,7 @@ $JBOSS_HOME/bin/add-user.bat -u admin -p admin123
 Updated user 'admin' to file 'D:\JBOSS\wildfly-21.0.2.Final\standalone\configuration\mgmt-users.properties'
 Updated user 'admin' to file 'D:\JBOSS\wildfly-21.0.2.Final\domain\configuration\mgmt-users.properties'
 Appuyez sur une touche pour continuer...
-```
+
 
 http://localhost:9990/console/index.html
 user = admin

@@ -74,9 +74,9 @@ password =  admin123
 - git clone https://github.com/sanogotech/helloear.git
 
 * https://hantsy.github.io/jakartaee8-starter-boilerplate/03run-wildfly-mvn.html
-```
+
 mvn clean  package 
 mvn clean  package  wildfly:deploy
 mvn clean  package   wildfly:undeploy
-```
+
 

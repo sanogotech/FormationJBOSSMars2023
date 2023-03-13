@@ -70,3 +70,12 @@ user = admin
 password =  admin123
 
 ### Presentation de l'Arborescence  Folders/Files Wildfly
+
+##  Sample code
+- git clone https://github.com/sanogotech/helloear.git
+```
+mvn clean  package 
+mvn clean  package  wildfly:deploy
+mvn clean  package   wildfly:undeploy
+```
+

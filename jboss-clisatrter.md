@@ -1,3 +1,21 @@
+##  TOP 10  JBBOSC CLI
+
+https://access.redhat.com/documentation/fr-fr/red_hat_jboss_enterprise_application_platform/7.2/html/management_cli_guide/getting_started_management_cli
+
+jboss-cli.sh -c --controller=localhost:19990
+help
+- deploy  my.ear
+- undeploy my.ear
+- :reload
+- :shutdown
+- ls
+- cd
+help --commands
+deploy --help
+
+
+
+
 [[jboss-cli]]
 == Management using Command Line Interface (jboss-cli)
 
@@ -256,6 +274,8 @@ TIP: Commands can be auto completed by using the tab key. For example, type lett
 ----
 [standalone@localhost:9990 /] deploy --help
 ----
+
+
 +
 will show the following output:
 +

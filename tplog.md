@@ -1,6 +1,12 @@
 
+## LOG LEVEL
 
-0. Lancer  Jboss CLI
+There are six basic log levels in log4j: TRACE, DEBUG, INFO, WARN, ERROR and FATAL. 
+
+The logging threshold on the console is INFO, so that any informational messages, warning messages and error messages are returned to the console, while general debug and trace messages are only available in the log file. If no logging level is set for the server.log file, it defaults to DEBUG.
+
+
+## Configuration des logs avec   Jboss CLI
 ```
 jboss-cli.bat  -c
 ```

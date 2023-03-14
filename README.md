@@ -60,7 +60,10 @@ $ bin/standalone.sh -c standalone-full-ha.xml -Djboss.socket.binding.port-offset
 ```
 Dans l’exemple ci-dessus on a décalé les ports du second noeud de 500, ainsi le port http 8080 se retrouve en 8580.
 
-
+** Datasource H2 DB 
+git clone  https://github.com/sanogotech/JBOSSWildflyQuickstart.git
+cd JBOSSWildflyQuickstart
+cd kitchensink-ear
 
 ### Architecture NTIER
 

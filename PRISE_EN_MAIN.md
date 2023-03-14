@@ -73,6 +73,14 @@ mvn clean  package   wildfly:undeploy
 
 ## Projet avec datasource
 - projet datasource h2
+
+Datasource H2 DB:
+```
+git clone https://github.com/sanogotech/JBOSSWildflyQuickstart.git 
+
+cd JBOSSWildflyQuickstart cd kitchensink-ear
+```
+
 - projet avec mysql
 - download  driver mysql
 - lancer  wampserver

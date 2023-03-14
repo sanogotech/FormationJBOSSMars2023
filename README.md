@@ -3,16 +3,30 @@ Formation JBOSS  Mars 2023
 
 ##  Docs
 
+- https://www.jtips.info/WildFly/GettingStarted
+
 - https://access.redhat.com/documentation/fr-fr/red_hat_jboss_enterprise_application_platform/7.3/pdf/configuration_guide/red_hat_jboss_enterprise_application_platform-7.3-configuration_guide-en-us.pdf
 
 - http://www.mastertheboss.com/jboss-frameworks/jboss-maven/configuring-maven-wildfly-plugin/
 
 - https://access.redhat.com/documentation/fr-fr/jboss_enterprise_application_platform/6.3/html/installation_guide/installation_structure
 
+- Full vs Default : https://docs.wildfly.org/21/Getting_Started_Guide.html 
+
 ##  9h30 - 12h30 /  13h30 - 17h/16h30
 
 - Pause : 10h45
 - Pause : 15h
+
+## INTRO
+
+-   JAVA vs JEE
+-   JAVA  EE :  https://docs.oracle.com/javaee/7/tutorial/overview007.htm
+-   JBOSS/Wildfly  :  https://www.wildfly.org/downloads/
+```
+The technology behind WildFly is also available in JBoss Enterprise Application Platform 7. JBoss EAP is a hardened enterprise subscription with Red Hat’s world-class support, long multi-year maintenance cycles, and exclusive content.
+
+```
 
 ##  Jour 1 TP
 
@@ -24,17 +38,32 @@ $JBOSS_HOME/bin/standalone.bat  ou   /bin/standalone.sh  sur Linux
 $JBOSS_HOME/bin/add-user.bat -u admin -p admin123 
 
 ```
-
-
-## INTRO
-
--   JAVA vs JEE
--   JAVA  EE :  https://docs.oracle.com/javaee/7/tutorial/overview007.htm
--   JBOSS/Wildfly  :  https://www.wildfly.org/downloads/
-```
-The technology behind WildFly is also available in JBoss Enterprise Application Platform 7. JBoss EAP is a hardened enterprise subscription with Red Hat’s world-class support, long multi-year maintenance cycles, and exclusive content.
+## TP Jour 2
 
 ```
+$ bin/standalone.bat  -Djboss.node.name=instance1
+Pour le second serveur, il faut en plus faire un décalage de ports pour éviter les conflits.
+
+$ bin/standalone.bat -Djboss.node.name=instance2 -Djboss.socket.binding.port-offset=100
+```
+
+Pour changer de profil, il y a plusieurs possibilités :
+
+$ bin/standalone.bat -c standalone-full.xml
+
+Mode haute disponibilité
+Il existe deux exemples de configuration en mode haute disponibilité (ou plus simplement en mode maître - esclave) qui permet à une instance de reprendre là où s’est arrêtée l’autre. Il faudra par conte lancer les deux instances avec un décalage de ports afin d’éviter les conflits ainsi que le nom du noeud.
+
+```
+$ bin/standalone.sh -c standalone-full-ha.xml -Djboss.node.name=nodeA
+$ bin/standalone.sh -c standalone-full-ha.xml -Djboss.socket.binding.port-offset=500 -Djboss.node.name=nodeB
+```
+Dans l’exemple ci-dessus on a décalé les ports du second noeud de 500, ainsi le port http 8080 se retrouve en 8580.
+
+** Datasource H2 DB 
+git clone  https://github.com/sanogotech/JBOSSWildflyQuickstart.git
+cd JBOSSWildflyQuickstart
+cd kitchensink-ear
 
 ### Architecture NTIER
 

@@ -34,19 +34,14 @@ If the folders didn't exist, create it by yourself.
 
 Open WILDFLY_HOME\standalone\configuration\standalone.xml, and then find <drivers> tag, inside that tag, put these lines to add MySQL driver:
 
-```
-<driver name="mysql" module="com.mysql">
- <driver-class>com.mysql.cj.jdbc.Driver</driver-class>
- <xa-datasource-class>com.mysql.cj.jdbc.MysqlXADataSource</xa-datasource-class>
-</driver>
-```
+
     
     **  Datasource
     
         ```
                <datasource jndi-name="java:/jboss/datasources/books-database" pool-name="books-datasource">
                     <connection-url>jdbc:mysql://127.0.0.1:3306/books?useSSL=false&amp;serverTimezone=UTC&amp;useLegacyDatetimeCode=false</connection-url>
-                    <driver>mysql</driver>
+                    <driver>mysql-connector-java-8.0.26.jar</driver>
                     <security>
                         <user-name>root</user-name>
                          <password></password>

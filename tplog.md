@@ -23,7 +23,14 @@ jboss-cli.bat  -c
 /subsystem=logging/logger=com.jcg:add(use-parent-handlers=false, handlers=["my-apphandler"])
 
 ```
-3. Reload
+3. Set log level
+
+```
+/subsystem=logging/file-handler=my-apphandler:change-log-level(level="INFO")
+```
+
+
+4. Reload
 
 :reload
 
@@ -73,3 +80,6 @@ public class GreetingsBean {
 - org.jboss.logging.Logger;
 - log4j
 - logback.xml
+
+## Divers  PATH Defaut ?  "jboss.server.log.dir"
+- Voir dans la console admin web

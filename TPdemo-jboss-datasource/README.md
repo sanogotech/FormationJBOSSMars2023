@@ -40,6 +40,18 @@ Open WILDFLY_HOME\standalone\configuration\standalone.xml, and then find <driver
  <xa-datasource-class>com.mysql.cj.jdbc.MysqlXADataSource</xa-datasource-class>
 </driver>
 ```
+    
+    **  Datasource
+    
+        ```
+               <datasource jndi-name="java:/jboss/datasources/books-database" pool-name="books-datasource">
+                    <connection-url>jdbc:mysql://127.0.0.1:3306/books?useSSL=false&amp;serverTimezone=UTC&amp;useLegacyDatetimeCode=false</connection-url>
+                    <driver>mysql</driver>
+                    <security>
+                        <user-name>root</user-name>
+                    </security>
+                </datasource>
+    ```
 
 Now you can restart Wildfly and expect that new driver will be inside the available list driver.
 ## Sample code

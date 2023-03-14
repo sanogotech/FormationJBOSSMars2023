@@ -121,8 +121,11 @@ Using any kind of text editor, create file inside your Wildfly path, WILDFLY_HOM
 If the folders didn't exist, create it by yourself.
 
 3. Add MySQL connector to the driver list
+
+```
 jboss-cli.bat  -c
 deploy  mysql-connector-java-8.0.26.jar
+```
 
 4. Open WILDFLY_HOME\standalone\configuration\standalone.xml, and then find <drivers> tag, inside that tag, put these lines to add MySQL driver:
 

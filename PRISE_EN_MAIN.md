@@ -33,6 +33,10 @@ Vérifier dans les logs:  C:/tools/wildfly-21.0.2.Final/standalone/log
 
 ## Git Clone ou Download  War ou code source
 
+- Maven
+- mvn  clean package
+- lien vers /target/*.war
+- deposer /sampleswarear
 
 #  Manual  Deploy
 - starter.war

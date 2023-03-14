@@ -2,7 +2,7 @@
 
 https://access.redhat.com/documentation/fr-fr/red_hat_jboss_enterprise_application_platform/7.2/html/management_cli_guide/getting_started_management_cli
 
-jboss-cli.sh -c --controller=localhost:19990
+jboss-cli.sh -c 
 help
 - deploy  my.ear
 - undeploy my.ear
@@ -14,7 +14,7 @@ help --commands
 deploy --help
 
 
-
+EAP_HOME/bin/jboss-cli.sh --connect --file=/path/to/cli_commands.txt
 
 [[jboss-cli]]
 == Management using Command Line Interface (jboss-cli)

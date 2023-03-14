@@ -23,6 +23,9 @@ jboss-cli.bat  -c
 /subsystem=logging/logger=com.jcg:add(use-parent-handlers=false, handlers=["my-apphandler"])
 
 ```
+3. Reload
+
+:reload
 
 ##  Sample Code
 

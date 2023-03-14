@@ -49,6 +49,7 @@ Open WILDFLY_HOME\standalone\configuration\standalone.xml, and then find <driver
                     <driver>mysql</driver>
                     <security>
                         <user-name>root</user-name>
+                         <password></password>
                     </security>
                 </datasource>
     ```

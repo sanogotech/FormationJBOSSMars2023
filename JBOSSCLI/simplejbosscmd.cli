@@ -1,0 +1,12 @@
+# Demo CLI script
+# jboss-cli.bat  --file=D:\JBOSS\FormationJBOSSMars2023\JBOSSCLI\simplejbosscmd.cli
+connect
+
+#force switch can be included in the command to replace the existing application.
+deploy D:\JBOSS\FormationJBOSSMars2023\sample\starter.war --force
+
+# Verify the deployment status by typing the following command deployment-info in the console
+deployment-info
+
+# reload
+#:reload

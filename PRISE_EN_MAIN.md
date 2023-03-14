@@ -23,9 +23,9 @@ Vérifier dans les logs:  C:/tools/wildfly-21.0.2.Final/standalone/log
 
 ##  Ajouter dans les variables Env  windows le chemin vers C:/tools/wildfly-21.0.2.Final/bin/
 
-- Depuis le menu démarrer taper :"Modier variables"
-- TODO : Capture
-
+- 1. Depuis le menu démarrer taper :"Modier variables"
+- 2. Variable System
+- 3:  Dans  path modifier  et ajouter C:/tools/wildfly-21.0.2.Final/bin/, faire ok .
 - Tester avec le lancement de cmd:  et directement standalone.bat 
 
 ##  Admin User

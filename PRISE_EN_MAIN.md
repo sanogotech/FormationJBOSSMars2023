@@ -42,11 +42,16 @@ Vérifier dans les logs:  C:/tools/wildfly-21.0.2.Final/standalone/log
 - lien vers /target/*.war
 - deposer /sampleswarear
 
-#  Manual  Deploy
+##  Manual  Deploy
 - starter.war
 - hello-ear
 
-# Projet avec datasource
+## Maven  Plugin Wildfly:deploy
+- commandes
+
+- Doc
+
+## Projet avec datasource
 - projet datasource h2
 - projet avec mysql
 - download  driver mysql

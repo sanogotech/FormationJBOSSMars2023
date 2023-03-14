@@ -13,9 +13,9 @@
 Vérifier: RAS sur la console
 Vérifier dans les logs:  C:/tools/wildfly-21.0.2.Final/standalone/log
 
-- localhost:8080/  (application)
+- Depuis chrome aller sur:  localhost:8080/  (application)
 
-- localhost:9990/ ( admin)
+- Depuis chrome aller sur: localhost:9990/ ( admin)
 
 ##  Ajouter dans les variables Env  windows le chemin vers C:/tools/wildfly-21.0.2.Final/bin/
 
@@ -30,6 +30,10 @@ Vérifier dans les logs:  C:/tools/wildfly-21.0.2.Final/standalone/log
 ## JAVA VS  JAVA JEE
 
 ##  Arborescence JBOSS
+
+/bin
+/deployment
+/modules
 
 ## Git Clone ou Download  War ou code source
 
@@ -46,6 +50,8 @@ Vérifier dans les logs:  C:/tools/wildfly-21.0.2.Final/standalone/log
 - projet datasource h2
 - projet avec mysql
 - download  driver mysql
+- lancer  wampserver
+- créer la base "books"
 
 ## TOP 10  JBOSS-CLI
 - Top

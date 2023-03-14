@@ -5,6 +5,7 @@ There are six basic log levels in log4j: TRACE, DEBUG, INFO, WARN, ERROR and FAT
 
 The logging threshold on the console is INFO, so that any informational messages, warning messages and error messages are returned to the console, while general debug and trace messages are only available in the log file. If no logging level is set for the server.log file, it defaults to DEBUG.
 
+* https://kb.novaordis.com/index.php/WildFly_Logging_Subsystem_Concepts
 
 ## Configuration des logs avec   Jboss CLI
 ```

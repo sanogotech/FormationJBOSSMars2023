@@ -35,7 +35,7 @@ load balancing: allows a client to have timely responses from the application, e
 
 standalone.bat -Djboss.socket.binding.port-offset=1000  
 
-standalone.bat -Djboss.http.port=8090
+standalone.bat 
 
 # Mode haute disponibilité: HA
 

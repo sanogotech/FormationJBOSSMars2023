@@ -26,9 +26,9 @@ loss of application availability in the form of extreme delays in response time 
 
 WildFly supports two features which ensure high availability of critical Java EE applications:
 
-fail-over: allows a client interacting with a Java EE application to have uninterrupted access to that application, even in the presence of node failures
+** fail-over: allows a client interacting with a Java EE application to have uninterrupted access to that application, even in the presence of node failures
 
-load balancing: allows a client to have timely responses from the application, even in the presence of high-volumes of requests
+** load balancing: allows a client to have timely responses from the application, even in the presence of high-volumes of requests
 
 
 # Mode standard

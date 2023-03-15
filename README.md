@@ -3,6 +3,8 @@ Formation JBOSS  Mars 2023
 
 ##  Docs
 
+- https://github.com/sanogotech/wildfly-lab
+
 - https://www.jtips.info/WildFly/GettingStarted
 
 - https://access.redhat.com/documentation/fr-fr/red_hat_jboss_enterprise_application_platform/7.3/pdf/configuration_guide/red_hat_jboss_enterprise_application_platform-7.3-configuration_guide-en-us.pdf

@@ -35,11 +35,13 @@ load balancing: allows a client to have timely responses from the application, e
 
 standalone.bat   ou  /standalone.bat -c standalone.xml 
 
+
+$ standalone.sh -c standalone-full.xml
+
 standalone.bat -Djboss.socket.binding.port-offset=1000  
 
 # Mode haute disponibilité: HA
 
-$ standalone.sh -c standalone-full.xml
 
 bin/standalone.bat -c standalone-full-ha.xml -Djboss.node.name=nodeA
 

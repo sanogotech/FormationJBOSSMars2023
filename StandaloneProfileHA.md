@@ -32,24 +32,29 @@ loss of application availability in the form of extreme delays in response time 
 
 WildFly supports two features which ensure high availability of critical Java EE applications:
 
-fail-over: allows a client interacting with a Java EE application to have uninterrupted access to that application, even in the presence of node failures
+** fail-over: allows a client interacting with a Java EE application to have uninterrupted access to that application, even in the presence of node failures
 
-load balancing: allows a client to have timely responses from the application, even in the presence of high-volumes of requests
+** load balancing: allows a client to have timely responses from the application, even in the presence of high-volumes of requests
 
 
 # Mode standard
 
-standalone.bat -Djboss.socket.binding.port-offset=1000  
+standalone.bat   ou  /standalone.bat -c standalone.xml 
 
-standalone.bat -Djboss.http.port=8090
+
+$ standalone.sh -c standalone-full.xml
+
+standalone.bat -Djboss.socket.binding.port-offset=1000  
 
 # Mode haute disponibilité: HA
 
-$ standalone.sh -c standalone-full.xml
-bin/standalone.bat -c standalone-full-ha.xml -Djboss.node.name=nodeA
-bin/standalone.bat  -c standalone-full-ha.xml -Djboss.socket.binding.port-offset=500 -Djboss.node.name=nodeB
 
-Dans l'exemple ci-dessus on a décalé les ports du second noeud de 500, ainsi le port http 8080 se retrouve en 8580
+bin/standalone.bat -c standalone-full-ha.xml -Djboss.node.name=nodeA
+
+
+bin/standalone.bat  -c standalone-full-ha.xml -Djboss.socket.binding.port-offset=1000 -Djboss.node.name=nodeB
+
+Dans l'exemple ci-dessus on a décalé les ports du second noeud de 1000, ainsi le port http 8080 se retrouve en 9080
 
 
 # Mode stantard vs full vs ha vs full-ha

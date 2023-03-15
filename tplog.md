@@ -89,6 +89,8 @@ git clone  https://github.com/sanogotech/helloear.git
 mvn clean package
 deployer ear pour voir les logs.
 
+http://127.0.0.1:8090/HelloWorld-web/index.jsf
+
 ##  Framework de log
 - org.jboss.logging.Logger;
 - log4j

@@ -1,3 +1,6 @@
+## Docs
+
+- https://docs.wildfly.org/
 
 ## 0. Download JBOSS
 
@@ -33,6 +36,8 @@ Vérifier dans les logs:  C:/tools/wildfly-21.0.2.Final/standalone/log
 
 ## JAVA VS  JAVA JEE
 
+The Java EE Tutorial: https://javaee.github.io/tutorial/toc.html
+
 ##  Arborescence JBOSS
 
 /bin
@@ -53,6 +58,10 @@ mvn  clean package
 ```
 - lien vers /target/*.war
 - deposer /sampleswarear
+
+** Urls
+- http://127.0.0.1:8090/starter/
+- http://127.0.0.1:8080/HelloWorld-web/index.jsf
 
 ##  Manual  Deploy
 - starter.war

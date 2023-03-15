@@ -33,7 +33,7 @@ load balancing: allows a client to have timely responses from the application, e
 
 # Mode standard
 
-standalone.bat 
+standalone.bat   ou  /standalone.bat -c standalone.xml 
 
 standalone.bat -Djboss.socket.binding.port-offset=1000  
 

@@ -7,6 +7,8 @@ Formation JBOSS  Mars 2023
 
 - https://www.jtips.info/WildFly/GettingStarted
 
+- https://docs.wildfly.org/27/High_Availability_Guide.html
+
 - https://access.redhat.com/documentation/fr-fr/red_hat_jboss_enterprise_application_platform/7.3/pdf/configuration_guide/red_hat_jboss_enterprise_application_platform-7.3-configuration_guide-en-us.pdf
 
 - http://www.mastertheboss.com/jboss-frameworks/jboss-maven/configuring-maven-wildfly-plugin/

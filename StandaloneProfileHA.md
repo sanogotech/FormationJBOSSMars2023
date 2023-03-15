@@ -14,6 +14,12 @@ What is the difference between the standalone-full-ha.xml, standalone-full.xml,s
 * standalone-ha.xml: Default profile with clustering capabilities
 * standalone-full-ha.xml: Full profile with clustering capabilities
 
+Full profile includes messaging support (JMS - HornetQ, ...).
+
+HA profile includes clustering support (Infinispan, failover, ...).
+
+Full HA profile includes both of them.
+
 
 ## What are High Availability services?
 WildFly’s High Availability services are used to guarantee availability of a deployed Java EE application.

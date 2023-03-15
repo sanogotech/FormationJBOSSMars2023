@@ -174,6 +174,7 @@ ls
 cd help --commands deployment-info deploy --help
 EAP_HOME/bin/jboss-cli.sh --connect --file=/path/to/cli_commands.txt
 
-
+## Divers
+- Hibernarte Stats: https://marktjbrown.com/hibernate-statistics
 
 

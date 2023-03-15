@@ -21,7 +21,7 @@ jboss-cli.bat  -c
 2. Creer une categorie pour l'application
 
 ```
-/subsystem=logging/logger=com.jcg:add(use-parent-handlers=false, handlers=["my-apphandler"])
+/subsystem=logging/logger=it.fixx:add(use-parent-handlers=false, handlers=["my-apphandler"])
 
 ```
 3. Set log level
@@ -36,47 +36,59 @@ jboss-cli.bat  -c
 :reload
 
 ##  Sample Code
+* https://github.com/sanogotech/helloear/blob/master/HelloWorld-web/src/main/java/it/fixx/helloworld/controller/MemberController.java
 
 ```java
-package com.jcg.wildflyexample;
+import it.fixx.helloworld.model.Member;
+import it.fixx.helloworld.service.MemberRegistration;
 
-import javax.inject.Named;
-import javax.enterprise.context.RequestScoped;
 import org.jboss.logging.Logger;
 
-/**
- *
- * @author Satya Choudhury
- */
-@Named(value = "greetingsBean")
-@RequestScoped
-public class GreetingsBean {
 
-    private String userName = "";
-    private static Logger log = Logger.getLogger(GreetingsBean.class.getName());
-    
-    /**
-     * Creates a new instance of GreetingsBean
-     */
-    public GreetingsBean() {
-        //System.out.println("Created GreetingsBean instance...");
-        log.info("Created GreetingsBean instance...");
+//@SessionScoped
+//public class MemberController  implements Serializable
+public class MemberController {
+	
+	private static Logger log = Logger.getLogger(MemberController.class.getName());
+
+    @Inject
+    private FacesContext facesContext;
+
+    @Inject
+    private MemberRegistration memberRegistration;
+
+    private Member newMember;
+
+    @Produces
+    @Named
+    public Member getNewMember() {
+        return newMember;
     }
-    
-    public String getUserName() {
-        return this.userName.trim();
+
+    public void register() throws Exception {
+        try {
+			log.info("Start ... Registration ***");
+            memberRegistration.register(newMember);
+            facesContext.addMessage(null,
+                    new FacesMessage(FacesMessage.SEVERITY_INFO, "Registered!", "Registration successful"));
+            initNewMember();
+        } catch (Exception e) {
+            String errorMessage = getRootErrorMessage(e);
+            FacesMessage m = new FacesMessage(FacesMessage.SEVERITY_ERROR, errorMessage, "Registration Unsuccessful");
+            facesContext.addMessage(null, m);
+        }
     }
-    
-    public void setUserName(String userName) {
-        this.userName = userName.trim();
-    }
-    
-    public String greetUser() {
-        return "greeting";
-    }
+
+
     
 }
 ```
+##  Test du Code 
+
+git clone  https://github.com/sanogotech/helloear.git
+mvn clean package
+deployer ear pour voir les logs.
+
 ##  Framework de log
 - org.jboss.logging.Logger;
 - log4j

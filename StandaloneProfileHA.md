@@ -46,9 +46,9 @@ standalone.bat -Djboss.socket.binding.port-offset=1000
 bin/standalone.bat -c standalone-full-ha.xml -Djboss.node.name=nodeA
 
 
-bin/standalone.bat  -c standalone-full-ha.xml -Djboss.socket.binding.port-offset=500 -Djboss.node.name=nodeB
+bin/standalone.bat  -c standalone-full-ha.xml -Djboss.socket.binding.port-offset=1000 -Djboss.node.name=nodeB
 
-Dans l'exemple ci-dessus on a décalé les ports du second noeud de 500, ainsi le port http 8080 se retrouve en 8580
+Dans l'exemple ci-dessus on a décalé les ports du second noeud de 1000, ainsi le port http 8080 se retrouve en 9080
 
 
 # Mode stantard vs full vs ha vs full-ha
